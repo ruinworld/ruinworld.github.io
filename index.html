@@ -146,62 +146,25 @@
       <div class="body-wrap">
         
   
-    <article id="post-Android源码目录结构" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#Android源码目录结构<br>各个版本的源码目录基本是类似，如果是编译后的源码目录会多增加一个out文件夹，用来存储编译产生的文件。Android7.0的根目录结构说明如下表所示。</p>
-<table>
-<thead>
-<tr>
-<th>Android源码根目录</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>abi    |应用程序二进制接口<br>art    |全新的ART运行环境<br>bionic    |系统C库<br>bootable|    启动引导相关代码<br>build|    存放系统编译规则及generic等基础开发包配置<br>cts    |Android兼容性测试套件标准<br>dalvik|    dalvik虚拟机<br>developers|    开发者目录<br>development    |应用程序开发相关<br>device    |设备相关配置<br>docs|    参考文档目录<br>external|    开源模组相关文件<br>frameworks|    应用程序框架，Android系统核心部分，由Java和C++编写<br>hardware|    主要是硬件抽象层的代码<br>libcore|    核心库相关文件<br>libnativehelper    |动态库，实现JNI库的基础<br>ndk    |NDK相关代码，帮助开发人员在应用程序中嵌入C/C++代码<br>out    |编译完成后代码输出在此目录<br>packages|    应用程序包<br>pdk|    Plug Development Kit 的缩写，本地开发套件<br>platform_testing|    平台测试<br>prebuilts|    x86和arm架构下预编译的一些资源<br>sdk    |sdk和模拟器<br>system    |底层文件系统库、应用和组件<br>toolchain|    工具链文件<br>tools|    工具文件<br>Makefile|    全局Makefile文件，用来定义编译规则</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/08/Android源码目录结构/#more">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
     <article id="post-Android系统源码目录结构" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/08/Android系统源码目录结构/">Android源码目录结构</a>
+    </h1>
+  
+
+        <a href="/2018/03/08/Android系统源码目录结构/" class="archive-article-date">
+  	<time datetime="2018-03-08T06:38:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
+</a>
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>整体结构<br>各个版本的源码目录基本是类似，如果是编译后的源码目录会多增加一个out文件夹，用来存储编译产生的文件。Android7.0的根目录结构说明如下表所示。</p>
+        <p>各个版本的源码目录基本是类似，如果是编译后的源码目录会多增加一个out文件夹，用来存储编译产生的文件。Android7.0的根目录结构说明如下表所示。</p>
 <table>
 <thead>
 <tr>
@@ -211,11 +174,115 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>abi</td>
+<td>应用程序二进制接口</td>
+</tr>
+<tr>
+<td>art</td>
+<td>全新的ART运行环境</td>
+</tr>
+<tr>
+<td>bionic</td>
+<td>系统C库</td>
+</tr>
+<tr>
+<td>bootable</td>
+<td>启动引导相关代码</td>
+</tr>
+<tr>
+<td>build</td>
+<td>存放系统编译规则及generic等基础开发包配置</td>
+</tr>
+<tr>
+<td>cts</td>
+<td>Android兼容性测试套件标准</td>
+</tr>
+<tr>
+<td>dalvik</td>
+<td>dalvik虚拟机</td>
+</tr>
+<tr>
+<td>developers</td>
+<td>开发者目录</td>
+</tr>
+<tr>
+<td>development</td>
+<td>应用程序开发相关</td>
+</tr>
+<tr>
+<td>device</td>
+<td>设备相关配置</td>
+</tr>
+<tr>
+<td>docs</td>
+<td>参考文档目录</td>
+</tr>
+<tr>
+<td>external</td>
+<td>开源模组相关文件</td>
+</tr>
+<tr>
+<td>frameworks</td>
+<td>应用程序框架，Android系统核心部分，由Java和C++编写</td>
+</tr>
+<tr>
+<td>hardware</td>
+<td>主要是硬件抽象层的代码</td>
+</tr>
+<tr>
+<td>libcore</td>
+<td>核心库相关文件</td>
+</tr>
+<tr>
+<td>libnativehelper</td>
+<td>动态库，实现JNI库的基础</td>
+</tr>
+<tr>
+<td>ndk</td>
+<td>NDK相关代码，帮助开发人员在应用程序中嵌入C/C++代码</td>
+</tr>
+<tr>
+<td>out</td>
+<td>编译完成后代码输出在此目录</td>
+</tr>
+<tr>
+<td>packages</td>
+<td>应用程序包</td>
+</tr>
+<tr>
+<td>pdk</td>
+<td>Plug Development Kit 的缩写，本地开发套件</td>
+</tr>
+<tr>
+<td>platform_testing</td>
+<td>平台测试</td>
+</tr>
+<tr>
+<td>prebuilts</td>
+<td>x86和arm架构下预编译的一些资源</td>
+</tr>
+<tr>
+<td>sdk</td>
+<td>sdk和模拟器</td>
+</tr>
+<tr>
+<td>system</td>
+<td>底层文件系统库、应用和组件</td>
+</tr>
+<tr>
+<td>toolchain</td>
+<td>工具链文件</td>
+</tr>
+<tr>
+<td>tools</td>
+<td>工具文件</td>
+</tr>
+<tr>
+<td>Makefile</td>
+<td>全局Makefile文件，用来定义编译规则</td>
 </tr>
 </tbody>
 </table>
-<p>abi    |应用程序二进制接口<br>art    |全新的ART运行环境<br>bionic    |系统C库<br>bootable|    启动引导相关代码<br>build|    存放系统编译规则及generic等基础开发包配置<br>cts    |Android兼容性测试套件标准<br>dalvik|    dalvik虚拟机<br>developers|    开发者目录<br>development    |应用程序开发相关<br>device    |设备相关配置<br>docs|    参考文档目录<br>external|    开源模组相关文件<br>frameworks|    应用程序框架，Android系统核心部分，由Java和C++编写<br>hardware|    主要是硬件抽象层的代码<br>libcore|    核心库相关文件<br>libnativehelper    |动态库，实现JNI库的基础<br>ndk    |NDK相关代码，帮助开发人员在应用程序中嵌入C/C++代码<br>out    |编译完成后代码输出在此目录<br>packages|    应用程序包<br>pdk|    Plug Development Kit 的缩写，本地开发套件<br>platform_testing|    平台测试<br>prebuilts|    x86和arm架构下预编译的一些资源<br>sdk    |sdk和模拟器<br>system    |底层文件系统库、应用和组件<br>toolchain|    工具链文件<br>tools|    工具文件<br>Makefile|    全局Makefile文件，用来定义编译规则</p>
 
       
 
